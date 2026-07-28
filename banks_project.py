@@ -156,7 +156,7 @@ load_to_db(df, conn, TABLE_NAME)
 log_progress("DB Load phase Ended")
 
 log_progress("DB Query phase Started")
-print(run_queries("SELECT * FROM Largest_banks WHERE Name = 'JPMorgan Chase'", conn))
+print(run_query("SELECT * FROM Largest_banks WHERE Name = 'JPMorgan Chase'", conn))
 log_progress("DB Query phase Ended")
 
 conn.close()
